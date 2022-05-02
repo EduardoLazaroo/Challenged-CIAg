@@ -28,6 +28,7 @@ Tela de Login
 - É necessário login(e-mail) e senha.
 
 - Se não possuir conta deverá criar uma conta (cadastro).
+![Screenshot_1](https://user-images.githubusercontent.com/78938620/166269762-ebeade00-0ab5-4f53-bb4e-9ecbbe6c5a1b.png)
 
 ----
 
