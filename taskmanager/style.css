@@ -1,0 +1,277 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estrutura Header */
+header{
+    border-bottom: 1px solid rgb(0, 0, 0);
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    background: rgb(7, 6, 23);
+    margin-bottom: 25px;
+    box-shadow: inset 0 0 1em rgba(0, 0, 0, 0.498);
+}
+
+nav{
+    width: 90%;
+    height: 72px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .logo{
+    font: 700 30px "Popins";
+    color: rgb(255, 255, 255);
+    margin-left: 40px;
+}
+
+nav .sair{
+    font-size: 20px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 38px;
+    color: white;
+    background: rgb(180, 5, 5);
+    padding: 0 35px;
+    border-radius: 8px;
+    transition: 0.5s;
+}
+
+nav .sair:hover{
+    background:rgb(115, 9, 9);
+}
+
+/* -------------- */
+/* Estrutura Body */
+body{
+   background-color: rgb(127, 127, 127); 
+   font: 400 20px "DM Sans";
+   color: rgb(36, 36, 36);
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+h1{
+    margin: 20px 0;
+    font: 700 30px "Poppins";
+    color: rgb(10, 10, 10);
+}
+
+p{
+    font: 400 18px "Poppins";
+}
+
+strong{
+    color: rgb(173, 14, 33);
+}
+
+.container{
+    width: 100%;
+}
+
+/* Home */
+.btnCadastro{
+    margin: 30px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 30px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: rgb(4, 91, 3);
+    color: white;
+    transition: 0.5s;
+}
+
+.btnCadastro:hover{
+    background-color: rgb(8, 58, 7);
+}
+
+/* bodybox */
+.bodybox{
+    margin: 0 2%;
+    background-color: rgb(169, 202, 191);
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.199);
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.457);
+}
+
+.bodybox table{
+    table-layout: fixed;
+    width: 100%;
+    border: 1px solid black;
+}
+
+.bodybox tr{
+    line-break: anywhere;
+}
+
+.bodybox tr.trTitle{
+    font: 700 25px "DM Sans";
+    color: black;
+}
+
+.bodybox td{
+    padding: 0.5%;
+}
+
+.bodybox td a.btnEdit{
+    margin-left: 3%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 30px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: rgb(8, 22, 127);
+    color: white;
+    transition: 0.5s;
+}
+
+.bodybox td a.btnEdit:hover{
+    background-color: rgb(6, 14, 78);
+}
+
+.bodybox td a.btnDel{
+    margin-left: 3%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 25px;
+    height: 50px;
+    border-radius: 10px;
+    background: rgb(180, 5, 5);
+    color: white;
+    transition: 0.5s;
+}
+
+.bodybox td a.btnDel:hover{
+    background:rgb(115, 9, 9);
+}
+
+/* Page - Cadastro de Tarefas */
+section a.voltar{
+    margin: 13px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 32px;
+    height: 25px;
+    border-radius: 12px;
+    background-color: rgb(63, 73, 214);
+    color: white;
+    font-size: 15px;
+}
+
+section h3.title{
+    text-align: center;
+    margin: 26px 0;
+    font: 700 40px "DM Sans";
+}
+
+#cadTarefas{
+    margin: 0 20%;
+    background-color: rgb(47, 35, 70);
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.199);
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.457);
+}
+
+#cadTarefas h1{
+    margin-top: 22px;
+    margin-bottom: -1px;
+    font: 500 25px "DM Sans";
+    color: rgb(255, 255, 255);
+}
+
+#cadTarefas button{
+    margin: 13px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 40px;
+    height: 40px;
+    border-radius: 8px;
+    background-color: rgb(44, 21, 171);
+    color: white;
+    font-size: 18px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#cadTarefas button:hover{
+    background-color: rgb(7, 5, 47);
+}
+
+#cadTarefas [type="text"]{
+    width: 80%;
+    height: 30px;
+}
+
+#cadTarefas [type="date"]{
+    width: 30%;
+    height: 30px;
+}
+
+#cadTarefas [type="time"]{
+    width: 20%;
+    height: 30px;
+}
+
+/* Page - Editar Tarefas */
+#editTarefas{
+    margin: 0 20%;
+    background-color: rgb(21, 23, 57);
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.199);
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.457);
+}
+
+#editTarefas h1{
+    margin-top: 22px;
+    margin-bottom: -1px;
+    font: 500 25px "DM Sans";
+    color: rgb(255, 255, 255);
+}
+
+#editTarefas button{
+    margin: 13px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 40px;
+    height: 40px;
+    border-radius: 8px;
+    background-color: rgb(15, 102, 112);
+    color: white;
+    font-size: 18px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#editTarefas button:hover{
+    background-color: rgb(34, 74, 111);
+}
+
+#editTarefas [type="text"]{
+    width: 80%;
+    height: 30px;
+}
+
+#editTarefas [type="date"]{
+    width: 30%;
+    height: 30px;
+}
+
+#editTarefas [type="time"]{
+    width: 20%;
+    height: 30px;
+}
