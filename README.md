@@ -11,9 +11,7 @@ Conteúdo do Sistema
 - Exclusão de tarefa
 
 
-Usuários Cadastrados na Base:
-- user@hotmail.com
-- 123
+Usuário Cadastrado na Base:
 
 - teste@teste.com
 - teste
