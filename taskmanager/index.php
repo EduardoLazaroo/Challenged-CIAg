@@ -16,7 +16,7 @@
                 <img src="img/img_task.png">
             </div>
             <form action="db/verifica_login.php" method="post">
-                <input type="text" name="login" placeholder="Insira seu login" autofocus>
+                <input type="text" name="login" placeholder="Insira seu email" autofocus>
                 <input type="password" name="password" placeholder="Insira sua senha">
                 <input class="button" type="submit" value="Entrar">
             </form>
